@@ -85,14 +85,6 @@ class viaje{
 
 
 
-    /**************************************/
-    /***** CREO LOS ARRAY DE PASAJEROS *******/
-    /**************************************/
-
-
-
-
-
 
     /**************************************/
     /***** METODOS *******/
@@ -101,19 +93,6 @@ class viaje{
     public function __toString(){
         return $this->escribirMensajeBienvenida()."\n\n".$this->seleccionarOpcion()."\n\n".$this->opcion();
     }
-
-    //Creo el array multidimensional indexado
-    public function arrayPasajeros2(){
-        $pasajeros = array($pasajero1, $pasajero2, $pasajero3, $pasajero4);
-
-
-        $pasajero1 = array("Nombre"=>"Dario", "Apellido"=>"Fuentealba", "DNI"=>"30123456"); //Índice 0
-        $pasajero2 = array("Nombre"=>"Ayelen", "Apellido"=>"Silva", "DNI"=>"40123456"); //Índice 1
-        $pasajero3 = array("Nombre"=>"Sofia", "Apellido"=>"Lihuen", "DNI"=>"50123456"); //Índice 2
-        $pasajero4 = array("Nombre"=>"Edurne", "Apellido"=>"Gala", "DNI"=>"60123456"); //Índice 3
-    }
-
-    
 
 
     // Da un mensaje bienvenida 
